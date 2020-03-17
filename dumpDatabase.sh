@@ -3,8 +3,6 @@ echo "Creating dump: $DUMP_FILE_NAME"
 
 cd pg_backup
 
-sleep 5m
-
 pg_dump -C -w --format=c --blobs > $DUMP_FILE_NAME
 
 if [ $? -ne 0 ]; then
