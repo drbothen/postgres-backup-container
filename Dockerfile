@@ -1,3 +1,4 @@
+# Docker File for Postgres backups
 FROM alpine:3.9.5
 
 ENV PGHOST='localhost'
