@@ -1,4 +1,4 @@
-FROM alpine:3.6
+FROM alpine:3.9.5
 
 ENV PGHOST='localhost'
 ENV PGPORT='5432'
@@ -7,7 +7,7 @@ ENV PGUSER='postgres@postgres'
 ENV PGPASSWORD='password'
 
 RUN apk update
-RUN apk add postgresql
+RUN apk add --no-cache postgresql-client
 
 COPY dumpDatabase.sh .
 
