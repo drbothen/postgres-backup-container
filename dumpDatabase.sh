@@ -1,4 +1,4 @@
-DUMP_FILE_NAME="backupOn`date +%Y-%m-%d-%H-%M`.dump"
+DUMP_FILE_NAME="backupOn`date +%Y-%m-%d-%H-%M_${PGDATABASE}`.dump"
 echo "Creating dump: $DUMP_FILE_NAME"
 
 cd pg_backup
